@@ -21,6 +21,7 @@ setenv LD_LIBRARY_PATH "path to hpss_plugin"/build:${LD_LIBRARY_PATH}"
 
 #Install  
 git clone https://github.com/karamanoslab/OpenMMDihedralPlugin  
+mkdir build  
 cd build  
 cmake3 ../ -DCMAKE_CXX_FLAGS="-std=c++11 -D_GLIBCXX_USE_CXX11_ABI=1" -DCMAKE_CXX_STANDARD=11 -DCMAKE_INSTALL_PREFIX=./install  
 
