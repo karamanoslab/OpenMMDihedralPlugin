@@ -16,7 +16,7 @@ Tested with a Linux x86_64 machine and
 
 #setup compiler  
 setenv CXX '`which x86_64-conda-linux-gnu-g++`'  
-setenv CC '`which x86_64-conda-linux-gnu-gcc`'
+setenv CC '`which x86_64-conda-linux-gnu-gcc`'  
 setenv LD_LIBRARY_PATH "path to hpss_plugin"/build:${LD_LIBRARY_PATH}"  
 
 #Install  
