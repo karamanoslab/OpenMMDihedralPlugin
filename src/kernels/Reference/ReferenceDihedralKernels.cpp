@@ -3,9 +3,6 @@
 #include "ReferenceDihedralKernels.h"
 #include "DihedralForce.h"
 #include "math.h"
-// #include <iostream>
-
-
 #include "openmm/OpenMMException.h"
 #include "openmm/internal/ContextImpl.h"
 #include "openmm/reference/RealVec.h"
@@ -128,15 +125,6 @@ double ReferenceCalcDihedralForceKernel::execute(ContextImpl& context, bool incl
 		    ReferenceForce::getDeltaR(pos[p2], pos[p3], vb2);
  		    ReferenceForce::getDeltaR(pos[p3], pos[p4], vb3);
  		}    
-// 		
-//  		Vec3 pos1 = pos[p1];
-//  		Vec3 pos2 = pos[p2];
-//  		Vec3 pos3 = pos[p3];
-//  		Vec3 pos4 = pos[p4];
-// 		
-// 		Vec3 vb1 = pos1 - pos2;
-//  		Vec3 vb2 = pos3 - pos2;
-//  		Vec3 vb3 = pos4 - pos3;
 	  
 	  
 		vb1x=vb1[0];
