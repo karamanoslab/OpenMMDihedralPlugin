@@ -17,16 +17,18 @@ Tested with a Linux x86_64 machine and
 #setup compiler  
 setenv CXX '`which x86_64-conda-linux-gnu-g++`'  
 setenv CC '`which x86_64-conda-linux-gnu-gcc`'  
-setenv LD_LIBRARY_PATH "path to hpss_plugin"/build:${LD_LIBRARY_PATH}"  
 
 #Install  
-git clone https://github.com/karamanoslab/OpenMMDihedralPlugin  
-mkdir build  
-cd build  
-cmake3 ../ -DCMAKE_CXX_FLAGS="-std=c++11 -D_GLIBCXX_USE_CXX11_ABI=1" -DCMAKE_CXX_STANDARD=11 -DCMAKE_INSTALL_PREFIX=./install  
+`git clone https://github.com/karamanoslab/OpenMMDihedralPlugin`  
+`mkdir build`  
+`cd build`  
+`cmake3 ../ -DCMAKE_CXX_FLAGS="-std=c++11 -D_GLIBCXX_USE_CXX11_ABI=1" -DCMAKE_CXX_STANDARD=11 -DCMAKE_INSTALL_PREFIX=./install`  
 
-cmake3 --build .  
+`cmake3 --build . `
 
+After installation set your LD_LIBRARY_PATH
+
+`setenv LD_LIBRARY_PATH "path to hpss_plugin"/build:${LD_LIBRARY_PATH}"`  
 
 This builds the C++ plugin and a swig generated python wheel which is then installed with pip (> v20 is required).
 
