@@ -1,0 +1,37 @@
+  
+AF_jb6_97_model_0: 
+  - [1, 74]
+6z5n_98:
+  - [1, 74]
+JA1_AF-P31689-F1-model_v4_83:
+  - [1, 74]
+JB8_AF-Q8NHS0-F1-model_v4_95:
+  - [1, 67]
+JB6_AF-O75190-F1-model_v4_95:
+  - [1, 74]  
+JB9_AF-Q9UBS3-F1-model_v4_27_114:
+  - [1, 71]
+JB12_AF-Q9NXW2-F1-model_v4_113_199:
+  - [1, 60]
+JB2_AF-P25686-F1-model_v4_98:
+  - [1, 72]
+JB3_AF-Q8WWF6-F1-model_v4_96:
+  - [1, 69]
+JB4_AF-Q9UDY4-F1-model_v4_93:
+  - [1, 73]
+JB5_AF-O75953-F1-model_v4_93:
+  - [1, 74]
+JB7_AF-Q7Z6W7-F1-model_v4_91:
+  - [1, 74]
+JB11_AF-Q9UBS4-F1-model_v4_25_104:
+  - [1, 68]
+JB13_AF-P59910-F1-model_v4_95:
+  - [1, 74]
+JB14_AF-Q8TBM8-F1-model_v4_108_197:
+  - [1, 64]
+AF_jb6_97_model_0_mutants:
+  - [1, 74]
+AF_jb6_97_model_0_GSS:
+  - [1, 69]
+AF_jb6_97_model_0_fix69_CA:
+  - [1, 69]
