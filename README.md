@@ -29,5 +29,7 @@ After installation set your LD_LIBRARY_PATH
 `setenv LD_LIBRARY_PATH "path to hpss_plugin"/build:${LD_LIBRARY_PATH}"`  
 
 This builds the C++ plugin and a swig generated python wheel which is then installed with pip (> v20 is required).
+You should be able to do `python -c "import dihedralplugin"` without any error messages.  
+
 
 Test analytical forces and regenerate the energy function as in Rizuan et al Figure 1 by running the two python scripts in tests
