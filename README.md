@@ -1,6 +1,4 @@
 # OpenMMDihedralPlugin
-An OpenMM implementation of the HPS-SS dihedral potential by Rizuan et al.
-
 
 This is an openmm implementation of the HPS-SS dihedral potential by Rizuan et al. [DOI: 10.1021/acs.jcim.2c00450]  
 The original code can be found here :  https://github.com/azamat-rizuan/HPS-SS-model  
