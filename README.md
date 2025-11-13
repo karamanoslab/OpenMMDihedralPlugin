@@ -15,8 +15,8 @@ Tested with a Linux x86_64 machine and
    openmm8.1.1 and openmm8.2  
 
 #setup compiler  
-setenv CXX '`which x86_64-conda-linux-gnu-g++`'  
-setenv CC '`which x86_64-conda-linux-gnu-gcc`'  
+`setenv CXX `which x86_64-conda-linux-gnu-g++``  
+`setenv CC `which x86_64-conda-linux-gnu-gcc``  
 
 #Install  
 `git clone https://github.com/karamanoslab/OpenMMDihedralPlugin`  
