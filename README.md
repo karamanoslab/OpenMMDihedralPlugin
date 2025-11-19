@@ -6,12 +6,15 @@ The original code can be found here :  https://github.com/azamat-rizuan/HPS-SS-m
 ## Installation notes
 A conda python environment with openmm installed is required.
 
-Tested with a Linux x86_64 machine and  
-
+Tested with: 
+  
+   Linux x86_64 machine  
+   cmake3
    condas gxx compiler x86_64-conda-linux-gnu-gcc [conda install -c conda-forge gxx_linux-64]  
-   openmm8.1.1 and openmm8.2  
+   openmm8.2  
 
-### Setup compiler  
+### Setup compiler
+   Make sure condas compiler is used  
     > setenv CXX `which x86_64-conda-linux-gnu-g++`
     > setenv CC `which x86_64-conda-linux-gnu-gcc`
 
@@ -20,16 +23,16 @@ Tested with a Linux x86_64 machine and
 `cd OpenMMDihedralPlugin`  
 `mkdir build`  
 `cd build`  
-`cmake3 ../ -DCMAKE_CXX_FLAGS="-std=c++11 -D_GLIBCXX_USE_CXX11_ABI=1" -DCMAKE_CXX_STANDARD=11 -DCMAKE_INSTALL_PREFIX=./install`  
+`cmake ../ -DCMAKE_CXX_FLAGS="-std=c++11 -D_GLIBCXX_USE_CXX11_ABI=1" -DCMAKE_CXX_STANDARD=11 -DCMAKE_INSTALL_PREFIX=./install`  
 
-`cmake3 --build . `
+`make install `
 
-After installation set your LD_LIBRARY_PATH
+Optionally, after installation set your LD_LIBRARY_PATH
 
 `setenv LD_LIBRARY_PATH "path to hpss_plugin"/build:${LD_LIBRARY_PATH}"`  
 
 This builds the C++ plugin and a swig generated python wheel which is then installed with pip (> v20 is required).
-You should be able to do `python -c "import dihedralplugin"` without any error messages.  
+You should be able to do `python -c "import openmm; import dihedralplugin"` without any error messages.  
 
 
 Test analytical forces and regenerate the energy function as in Rizuan et al Figure 1 by running the two python scripts in tests

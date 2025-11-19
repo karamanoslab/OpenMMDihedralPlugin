@@ -3,7 +3,6 @@ from openmm import *
 from openmm.unit import *
 import numpy as np
 
-Platform.loadPluginsFromDirectory("/localdata/tkaraman/Projects/openmm_tests/torsion_plugin/build")
 
 import dihedralplugin
 

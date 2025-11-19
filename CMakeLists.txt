@@ -31,7 +31,7 @@ add_library(DihedralPlugin SHARED ${SOURCE_FILES})
 target_link_libraries(DihedralPlugin PRIVATE ${OPENMM_DIR}/lib/libOpenMM.so)
 
 # Install plugin library to custom folder
-install(TARGETS DihedralPlugin DESTINATION lib/plugins)
+install(TARGETS DihedralPlugin DESTINATION ${OPENMM_DIR}/lib/plugins)
 
 
 # ---- Build Python wheel and install with pip ----
@@ -69,7 +69,7 @@ endif()
 
 # --- Conditionally add pip install target ---
 if (PIP_OK)
-   add_custom_target(InstallPythonWheel ALL
+    add_custom_target(InstallPythonWheel ALL
     COMMAND "${Python_EXECUTABLE}" -m pip install --force-reinstall dist/*.whl
     WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/python"
     DEPENDS BuildPythonWheel

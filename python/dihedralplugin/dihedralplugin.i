@@ -1,7 +1,5 @@
 %module dihedralplugin
 
-/* %import(module="openmm") "swig/OpenMMSwigHeaders.i" */
-#%import(module="openmm") OpenMMSwigHeaders.i
 %include "typemaps.i"
 
 %ignore OpenMM::Force::Force;
@@ -61,9 +59,6 @@ namespace std {
 #include "openmm/RPMDIntegrator.h"
 #include "openmm/RPMDMonteCarloBarostat.h"
 %}
-
-
-# %include "OpenMMSwigHeaders.i"
 
 
 %pythoncode %{
