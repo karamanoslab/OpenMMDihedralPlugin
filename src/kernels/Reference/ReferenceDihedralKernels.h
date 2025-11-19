@@ -9,7 +9,7 @@
 namespace DihedralPlugin {
 
 /**
- * This kernel is invoked by ExampleForce to calculate the forces acting on the system and the energy of the system.
+ * This kernel is invoked by DihedralForce to calculate the forces acting on the system and the energy of the system.
  */
 class ReferenceCalcDihedralForceKernel : public CalcDihedralForceKernel {
 public:
@@ -17,9 +17,6 @@ public:
     }
     /**
      * Initialize the kernel.
-     * 
-     * @param system     the System this kernel will be applied to
-     * @param force      the ExampleForce this kernel will be used for
      */
     void initialize(const OpenMM::System& system, const DihedralForce& force);
     /**
@@ -33,9 +30,6 @@ public:
     double execute(OpenMM::ContextImpl& context, bool includeForces, bool includeEnergy);
     /**
      * Copy changed parameters over to a context.
-     *
-     * @param context    the context to copy parameters to
-     * @param force      the ExampleForce to copy the parameters from
      */
     void copyParametersToContext(OpenMM::ContextImpl& context, const DihedralForce& force);
 private:
