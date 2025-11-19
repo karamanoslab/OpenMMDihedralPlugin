@@ -15,7 +15,7 @@ Tested with:
 
 ### Setup compiler
    Make sure condas compiler is used  
-    > setenv CXX `which x86_64-conda-linux-gnu-g++`
+    > setenv CXX `which x86_64-conda-linux-gnu-g++`  
     > setenv CC `which x86_64-conda-linux-gnu-gcc`
 
 ### Install  
