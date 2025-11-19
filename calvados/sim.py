@@ -590,7 +590,7 @@ class Sim:
         simulation.reporters.append(app.statedatareporter.StateDataReporter(f'{self.path}/{self.sysname}.log',self.logfreq,
                 step=True,speed=True,elapsedTime=True,potentialEnergy=self.report_potential_energy, temperature=True, separator='\t',append=append))
         
-        self.get_energies(simulation)
+        #self.get_energies(simulation)
         print("STARTING SIMULATION", flush=True)
         if self.runtime > 0: # in hours
             simulation.runForClockTime(self.runtime*unit.hour, checkpointFile=fcheck_out, checkpointInterval=30*unit.minute)
@@ -602,7 +602,7 @@ class Sim:
                 simulation.saveCheckpoint(fcheck_out)
         simulation.saveCheckpoint(fcheck_out)
         
-        self.get_energies(simulation)
+        #self.get_energies(simulation)
         
         now = datetime.now()
         dt_string = now.strftime("%Y%d%m_%Hh%Mm%Ss")

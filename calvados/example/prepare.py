@@ -22,6 +22,7 @@ N_save = 1000
 N_frames = 1000
 
 residues_file = f'{cwd}/input/residues.csv'
+fastafile=f'{cwd}/input/{sysname}.fasta'
 
 N_aa=97
 L = int(np.ceil((N_aa - 1) * 0.38 + 4))
